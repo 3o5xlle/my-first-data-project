@@ -1,11 +1,10 @@
 import pandas as pd
 
 # جدول بيانات بسيط
-data = {'المنتج': ['شاحن', 'سماعة', None], 'السعر': [85, 120, None]}
+data = {'منتج': ['قاس', 'سماعة', 'لا أحد'], 'السعر': [10, 20, None]}
 df = pd.DataFrame(data)
 
-# تنظيف الفراغات
+# فرش رات
 df.fillna(0, inplace=True)
-print("تم التنظيف بنجاح!")
+print("تم التنظيف الفعال!")
 print(df)
-
